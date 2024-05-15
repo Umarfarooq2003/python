@@ -1,0 +1,77 @@
+# EXP4 demonstrate working with dictionaries in Python
+
+'''
+clear()	    Removes all the elements from the dictionary
+copy()	    Returns a copy of the dictionary
+fromkeys()  Returns a dictionary with the specified keys and value
+get()	    Returns the value of the specified key
+items()	    Returns a list containing a tuple for each key value pair
+keys()	    Returns a list containing the dictionary's keys
+pop()	    Removes the element with the specified key
+popitem()	Removes the last inserted key-value pair
+setdefault()	Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+update()	Updates the dictionary with the specified key-value pairs
+values()	Returns a list of all the values in the dictionary'''
+
+d1={1:"python", 2:"java", 3:"c++", 4:".net"}
+print(type(d1))
+print(d1)
+# copy  method
+d2=d1.copy()
+print(d2)
+#clear method
+d2.clear()
+print(d2)
+#Accessing the dictionary values
+print("accessing dict values using index")
+print(d1[1])
+print(d1[3])
+
+#adding,updating & delete dictionary
+d1[5]="DBMS"
+print("After adding new key and value")
+print(d1)
+#update key 4 value .net with "html"
+d1[4]="html"
+print("After updation the dictionary given below")
+print(d1)
+# dicrionary with update method
+d1.update({4:"Web Technology"})
+print(d1)
+# Deleting a key        
+# using pop() method       
+pop_key = d1.pop(2)
+print("deleted key value=", pop_key)
+print(d1)
+
+#dictionary Access using keys & items methods
+print("Dictionary keys ")
+for x in d1:
+    print(x)
+    
+print("Dictionary  using keys() method")
+for x in d1.keys():
+    print(x)
+
+print("Dictionary  using items() method")
+for x in d1.items():
+    print(x)
+
+
+print("Dictionary  using values() method")
+for x in d1.values():
+    print(x)
+
+# Deleting a key  using popitem(), this methods is used to delete last item in the dictionary.      
+# using popitem() method       
+pop_key = d1.popitem()
+print("deleted key value=", pop_key)
+print(d1)
+
+# dictionary methods
+print("using get method")
+dict = {1: "Hcl", 2: "TCS", 3: "Facebook", 4: "Amazon", 5: "Flipkart"}    
+# get() method    
+print(dict.get(3))    
+
+

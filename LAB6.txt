@@ -1,0 +1,15 @@
+#LAB EXPNO: 6, Implement mean, median, mode , standard deviation and variance
+
+from scipy import stats as st
+import numpy as np
+a=np.array([1,2,3,4,5,6,5,7])
+m=np.mean(a)
+print("Mean=", m)
+md=np.median(a)
+print("Median=", md)
+mde=st.mode(a)
+print("Mode =", mde)
+sd=np.std(a)
+print("Standard deviation=", sd)
+var1=np.var(a)
+print("Variance =", var1)

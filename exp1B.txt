@@ -1,0 +1,28 @@
+#Exp1. b) Implementation of python operators
+
+
+a = 5    # Initialize the value of a  
+b = 2     # Initialize the value of b
+#Arithmatic operators
+print('Addition of two numbers:',a+b)  
+print('Subtraction of two numbers:',a-b)  
+print('Multiplication of two numbers:',a*b)  
+print('Division of two numbers:',a/b)  
+print('Reminder of two numbers:',a%b)  
+print('Exponent of two numbers:',a**b)  
+print('Floor division of two numbers:',a//b)
+#Relational operators
+print('Two numbers are equal or not:',a==b)  
+print('Two numbers are not equal or not:',a!=b)  
+print('a is less than or equal to b:',a<=b)  
+print('a is greater than or equal to b:',a>=b)  
+print('a is greater b:',a>b)  
+print('a is less than b:',a<b)
+# logical operators
+a=5
+print('Is this statement true?:',a > 3 and a < 5)
+print('Any one statement is true?:',a > 3 or a < 5)
+print('Each statement is true then return False and vice-versa:', (not(a>3 and a<5)))
+
+
+      

@@ -1,0 +1,8 @@
+#LAB EXPNO. 7 COPY ONE FILE INTO ANOTHER FILE
+
+f1 = open('list1.txt‘, “r”) 
+f2 = open('output.txt', ‘w')  
+for line in f.readlines(): 
+     f2.write(line) 
+f1.close() 
+f2.close()

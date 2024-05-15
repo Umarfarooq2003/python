@@ -1,0 +1,47 @@
+'''A tuple in Python is similar to a list.
+The difference between the two is that
+we cannot change the elements of a tuple once it is assigned
+whereas we can change the elements of a list.'''
+
+# EXP3 demonstrate working with tuples in Python
+
+# Different types of tuples
+
+# Empty tuple
+tup1 = ()
+print(tup1)
+
+# Tuple having integers
+tup2 = (1, 2, 3,4,5,2)
+print(tup2)
+
+# tuple with mixed datatypes
+tup3 = (1, "PYTHON", "JAVA", 3.4)
+print(tup3)
+
+# nested tuple
+tup4 = ("mouse", [8, 4, 6], (1, 2, 3))
+print(tup4)
+
+#ACCESSING TUPLES USING INDEXING
+print("tuple access using indexing")
+for x in tup3:
+    print(x)
+#ACCESSING TUPLES USING slicing
+print("tuple access using slicing")
+print(tup3[0:2])
+print(tup2[::-1])
+print(tup4[0:2])
+print(tup4[0][0])
+print(tup4[1][2])
+
+#tuple methods  count, index
+print("count of 2 =", tup2.count(2))
+print("index of 5=",  tup2.index(5))
+
+#membership operator in tuple
+if "PYTHON" in tup3:
+      print("PYTHON COUSE AVAILABLE")
+else:
+      print("PYTHON COUSE not AVAILABLE")
+    

@@ -1,0 +1,29 @@
+# Exp.no 1 a) Implementation of data types in python
+a=int(input("Enter a value:"))
+b=float(input("Enter b value:"))
+c=a+b
+print("sum of int & floart=", c)
+
+# addition of two complex numbers
+p=3+2j
+q=5+3j
+r=p+q
+print("Addition of complex numbers=", r)
+
+# binary addition
+a=0b101  # decimal  5
+b=0b001  # decimal  1
+c=a+b    # decimal  6
+print("addition of binary numbers=", c)  # output  6
+
+# hexa decimal addition
+m=0x12   # decimal equal 18
+n=0x10   #  decimal equal 16
+p=m+n    # output 34
+print("Addition of hexa decimal=", p)
+
+#octal addition
+x=0o12   #decimal equal 10
+y=0o10   #decimal  equal 8
+z=x+y     
+print("Addition of octal numbers=",z)  # output 18
